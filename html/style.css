@@ -5,3 +5,25 @@ background-color: powderblue;
 h1{
   color:red ;
 }
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th {
+  text-align:center ;
+}
+strong {
+  color:red;
+}
+.city{
+  font-size: 20px;
+  color: red;
+}
+.ilce{
+  font-size: 15px;
+  color: brown;
+}
+#meta{
+  background-color: lightyellow;
+}
