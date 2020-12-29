@@ -1,0 +1,132 @@
+<!DOCTYPE html>: sayfanın bir html5.2 sayfası olduğunu gösterir.
+
+
+<html lang="en" dir="ltr">
+html dosyaları html etiketleri ile başlar ve biter
+<head>:head alanı ise web sayfası hakkında meta bilgisi içerir fakat bu bilgiler <br>
+  kullanıcıya gösterilmez sadece browser tarafından yorumlanır ve sayfa ona göre görüntülenir.
+</head>
+<body>:body kısmı web browserların görüntüledikleri alanlardır.
+  <br>:altsatıretiketi (br) <br>
+
+  <a href="www.google.com">( a ) etiketi hyperlink tanımlamada kullanılır. attributeları doğru girilmelidir.</a><br>
+
+  <img src="day1.PNG" alt="resim görüntülenemezse alternatif text mesaj gözükür." height="250" width="500" ><br>
+
+<h1>Heading 1</h1>h1_baslık
+<h2>Heading 2</h2>h2_baslık
+<!-- görüldüğü üzere başlık attıktan sonraki satırlar whitespace olur. -->
+<p>( p ) paragraf etiketi olarak kullanılır ve whitespace oluşturur.ve paragrafın düzenli olması gerektiğinden etiket içindeki whitespace kısımları otomatik siler</p> Kapatma etiketinden sonrakileri alt satıra geçirir. Bu satır gibi...
+
+<p style="font-size: 20px;"> html de style attribute u bir elementin işlevine stil ekler örneğin bir paragraf etiketinde kullanılırsa
+paragraf etiketi içerisindeki yazılar paragraf gibi davranır fakat stil ile bu yazıların renk boyut gibi özelliklerini değiştirilebiliriz.
+bu paragrafta yazı fontları 20px olarak değiştirilmiştir.</p>
+<p style="font-style: italic;"> bu paragrafta ise yazı stili italic olarak değiştirilmiştir.</p>
+<p style="color: red;">bu paragrafta ise yazı rengi kırmızı olarak ayarlandı.</p>
+<br><br><br><br>
+
+
+    <b> - ( B )old text </b> kalınlaştırma yapar <br>
+    <strong style="color:red"> strong </strong> önemli olduğunu belirtir.<br>
+    <i> <strong style="color:red">i</strong> </i>  italik yazar <br>
+    <em>  <strong style="color:red">em</strong> </em> vurgu yapar <br>
+    <mark >  <strong style="color:red">mark</strong> </mark>  yazının arkasını sarı kalem ile çizer. <br>
+    <small> <strong style="color:red">small</strong> </small>  küçük fontta yazı yazar. <br>
+    <del>  <strong style="color:red">del</strong> </del> yazının üstüne çizgi çizer ve silinmiş anlamı katar. <br>
+    <ins>  <strong style="color:red">ins</strong> </ins> genelde del ile birlikte kullanılarak silinenin yerine ekleme yapıldı anlamındadır. <br>
+    <sub>  <strong style="color:red">sub</strong> </sub>  H<sub>2</sub>O daki 2  etiketi ile yazılır. <br>
+    <sup> <strong style="color:red">sup</strong>  </sup> 4<sup>2</sup> = 16 ifadesindeki kare   etiketi ile yapılır. <br>
+
+    <br>
+    <br>
+    <br>
+
+
+<h1>html de alıntı etiketleri.</h1>
+<h6>abbr</h6>
+<h6>address</h6>
+<h6>bdo</h6>
+<h6>blockquote</h6>
+<h6>cite</h6>
+<h6>q</h6>
+<p style="color:blueviolet">____________________________________________________________________________________________________________</p>
+
+
+
+<blockquote cite="http://www.google.com">
+
+  Tarayıcılar tıpkı bu örnekteki gibi genel olarak  alıntı yapılan blokları içeri doğru girintiler.
+  Alıntılar <strong style="color:red">blockquote</strong> etiketi ile yapılır.
+
+  </blockquote>
+
+  <p>Bir paragraf içerisinde kısa bir alıntıya yer vermek istersek <strong style="color:red">q</strong> etiketini kullanmalıyız.
+  <q cite="w3schools.com">Bu paragraftaki alıntı w3schools dan alınmıştır.</q>  </p>
+</blockquote>
+
+
+<br><br><br>
+
+<h3>html de kısaltma etiketleri</h3>
+
+<p> <strong style="color:red">abbr</strong> <abbr title="world web web">www</abbr>  kısatmanın üstüne gelince neyin kısatlması olduğu görülebilir. </p>
+
+<br><br><br>
+
+<h3>html de iletişim bilgileri ekleme</h3>
+<address>
+  Mehmet Hakan <br>
+  telefon:-------------- <br>
+  mail:------------------<br>
+  address:--------------- <br>
+
+  </address>
+
+
+</address>
+
+<br><br><br>
+
+<h3> html de bir eserin adını sanatçı ile birlikte yazmak</h3>
+
+<p> <strong style="color:red">cite</strong> örneğin bir resim var ve resmin adını sanatçısıyla birlikte yazmak istiyoruz ve bunu yazarken çalışmanın adını cite le belirtiyoruz.  </p>
+
+<img src="day1.PNG" height="100" width="150" alt="bu resimde cite etiketi ile çalışmanın adı belirtilmiştir.">
+<p><cite>day1 </cite> by codonex. </p>
+
+<br><br><br>
+
+<h3>html de yazıların yönünü belirleme rtl ve ltr </h3>
+
+<p> <strong style="color:red" >bdo</strong> etiketi yazılırın yönünü değiştirir. Kapsadığı yazıları rtl veya ltr parametresine göre ayarlar. </p>
+
+Yazının normali: asdfghjklşi   <strong style="color:red"> bi-directional overide dir="rtl"---></strong>         <bdo dir="rtl">asdfghjklşi</bdo>  <br>
+Yazının normali: işlkjhgfdsa   <strong style="color:red"> bi-directional overide dir="ltr"---></strong>          <bdo dir="ltr">işlkjhgfdsa</bdo>  <br>
+
+
+<br><br><br>
+
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
