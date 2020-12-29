@@ -334,5 +334,61 @@ Meta veriler sayfada görüntülenmez, ancak tarayıcılar (içeriğin nasıl g�
 <hr>
 <p>bu iki çizgi &lt hr &gt etiketi ile çizilmiştir. </p>
 <hr>
+
+<h1>Form işlemleri</h1>
+
+&lt form &gt <br>
+
+<p>form elementi kullanıcıdan bilgi girişi almak için kullanılır. Genellikle işlenmek üzere bir servera gönderilir.</p>
+<p>form etiketi farklı inputlar içerir. text fields, checkboxes, radio buttons, submit buttons</p>
+
+<b><p>input elementi type attribute una bağlı olarak aşağıdaki şekillerde gözükür</p></b>
+
+<pre>
+&lt  input type="text"&gt 	Displays a single-line text input field
+&lt input type="radio"&gt 	Displays a radio button (for selecting one of many choices)
+&lt input type="checkbox"&gt 	Displays a checkbox (for selecting zero or more of many choices)
+&lt input type="submit"&gt 	Displays a submit button (for submitting the form)
+&lt input type="button"&gt 	Displays a clickable button
+</pre>
+
+<form action="">
+  <label for="usernick">Username:</label>
+  <input type="text" name="usernick" value="">
+<br>
+  <label for="userpass">Userpass:</label>
+  <input type="text" name="userpass" value="">
+
+  <hr>
+  <label for="23000">Elazığ</label>
+  <input type="radio" id="23000" name="city" value="elazığ"> <br>
+  <label for="02000">Adıyaman</label>
+  <input type="radio" id="02000" name="city" value="adıyaman"> <br>
+  <label for="000">hiçbiri</label>
+  <input type="radio" id="000" name="city" value=""> <br>
+<hr>
+  <label for="11">☼☼☼☼☼☼☼</label>
+  <input id="11" type="checkbox" name="chooseall" value="mucit">
+<br>
+  <label for="12">♫♫♫♫♫♫♫</label>
+  <input id="12" type="checkbox" name="chooseall" value="müzisyen">
+<hr>
+
+<input type="submit" name="submit" value="Gönder">
+
+
+<div class="">
+  label etiketi ekran okuyucu kullanan kişiler için önemlidir çünkü kullanıcı öğeye odaklandığında ekran okuyucu öğe ile ilişkili olan label i okur.
+  bu bağlama işlemini id attribute üzerinden yapmak daha mantıklıdır.
+</div>
+</form>
+
+
+
+
+
+
+
+
 </body>
 </html>
