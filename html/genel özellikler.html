@@ -5,6 +5,7 @@
 html dosyaları html etiketleri ile başlar ve biter
 <head>:head alanı ise web sayfası hakkında meta bilgisi içerir fakat bu bilgiler <br>
   kullanıcıya gösterilmez sadece browser tarafından yorumlanır ve sayfa ona göre görüntülenir.
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>:body kısmı web browserların görüntüledikleri alanlardır.
   <br>:altsatıretiketi (br) <br>
@@ -106,7 +107,25 @@ Yazının normali: işlkjhgfdsa   <strong style="color:red"> bi-directional over
 
 <br><br><br>
 
+<h1 style="color:blue;">External CSS</h1>
+<em>Here, we will demonstrate some commonly used CSS properties. You will learn more about them later.</em>
+<p>external css: html dosyasından farklı olarak oluşturulan stil dosyalarına verilen isimdir.</p>
+<p> css sayfasının linki html dosyasının head kısmında belirtilmelidir. örneğin
+<b> (link rel="stylesheet" href="/css/master.css") </b> </p>
 <p></p>
+
+<h3>html de hyperlink oluşturma <i style="color:red">a</i> etiketi </h3>
+<br>
+<p>a etiketi web site ve sayfalarına link vermek için kullanılır en önemli attributelar  <em>href</em> ve <em>target</em> şeklindedir. Aşapıdaki örnek google ana sayfasına link vermektedir. </p>
+<a href="https://www.google.com" target="_blank">Google</a>
+<p>web  linki vermek <i>absolute</i> link olarak adlandırılır.</p>
+<p>aynı zamanda kendi sitemiz içinde de link verebiliriz buna da <i>relative</i> link denir. Aşşağıdaki örnekte stil sayfasına yönledirme yapılmıştır. </p>
+
+<a href="style.css" target="_blank">Css dosyamız</a>
+
+<p>a etiketi içerisine alınan herşey bir likn olarak gözükür. Bu bağlada bir resme tıklanınca google da resim hakkında arama yapacak linki verelim.</p>
+<a href="day1.png"></a>
+
 
 
 
