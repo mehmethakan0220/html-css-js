@@ -374,8 +374,118 @@ Meta veriler sayfada görüntülenmez, ancak tarayıcılar (içeriğin nasıl g�
   <input id="12" type="checkbox" name="chooseall" value="müzisyen">
 <hr>
 
+<label for="33">Chose a city</label>
+<select class="" id="33" name="Sehirler" size="2" multiple >
+  <option value="sehir seç" selected>Sehir seç</option>
+<option value="Adıyaman">adıyaman</option>
+<option value="Malatya">Malatya</option>
+<option value="elazığ">Elazığ</option>
+</select>
+<p>size attribute ile text area satırlarını genişletebiliriz.</p>
+<p>multiple attribute ile birden fazla seçeneği ctrl ile seçebiliriz.</p>
+
+<fieldset>
+  <legend>Login</legend>
+  <label for="Username">Kullanıcı:</label>
+  <input type="text" name="uname" id="password"   value="">
+  <label for="password">Sifre:</label>
+  <input type="text" name="password" id="password" value="">
+</fieldset>
+
+
+
 <input type="submit" name="submit" value="Gönder">
 
+<hr>
+
+
+<textarea name="name" rows="8" cols="80" >
+   Bu alanı oluşturabilmek için &lttextarea&gt etiketini kullanırız.
+   &lttextarea name="name" rows="8" cols="80"&gt
+</textarea>
+
+<hr>
+
+<input list="Browser" >
+<datalist id="Browser" >
+  <option value="">Safari</option>
+  <option value="">Chrome</option>
+  <option value="">Firefox</option>
+
+</datalist>
+
+<hr>
+
+
+
+<h2>form elementi için <em>action</em> attribute i </h2>
+
+<nav>
+  Action attribute i, form gönderildiğinde gerçekleştirilecek eylemi tanımlar.
+  Genellikle, kullanıcı gönder düğmesine tıkladığında form verileri sunucudaki bir dosyaya gönderilir.
+</nav>
+
+<pre> <em>Action</em> un alabileceği değerler.
+  _blank 	    The response is displayed in a new window or tab
+  _self 	    The response is displayed in the current window
+  _parent 	  The response is displayed in the parent frame
+  framename 	The response is displayed in a named iframe
+</pre>
+
+<h2>form elementi için <em>method</em> attribute i </h2>
+
+<ul>
+  <li>method="get"</li>
+  <li>methot="post"</li>
+</ul>
+<b>default http gönderme metodu <em>get</em>'tir </b>
+<pre>
+  Get methodu 2048 karakter uzunluğundadır.
+  Sayfaları yer imlerine eklemek için kullanışlıdır.
+  <br>
+  Gönderilen veriler http isteğinin gövdesine eklenir url barda gözükmez.
+  Getten farklı olarak sınırsız sayıda karakter gönderebilir.
+  Form gönderimlerine yer işareti koyulmaz.
+  Form verileri hassas veriler içeriyorsa post kullanılmalıdır.
+</pre>
+
+<h2>Form etiketinin kullnadığı elementler</h2>
+
+<pre>
+
+    &ltinput&gt       -<em>input ögesi type ögesine bağlı olarak farklı giriş alanları oluşturur.</em>
+    &ltlabel&gt       -<em><b>for</b> attribute una inputlardaki id attribute u bağlanır.</em>
+    &ltselect&gt      -<em>Bir text kutucuğu içerisinde birden çok seçenekten birini seçmemize yardımcı olur. visible ile genişletilebiliriz.</em>
+    &lttextarea&gt    -<em>bir metin kutusu oluşturmaya yarar</em>
+    &ltbutton&gt      -<em>bir buton oluşturulur ve buton için eylemler düzenlenebilir.</em>
+    &ltfieldset&gt    -<em>&ltfieldset&gt öğesi, bir formdaki ilgili verileri gruplamak için kullanılır.</em>
+    &ltlegend&gt      -<em>fieldset ile gruplanan alana başlık eklemede kullanılır.</em>
+    &ltdatalist&gt    -<em>bir input içerisinde kullanılır ve kendi içerisinde option ile oluşturulan seçenekleri barındırır.</em>
+    &ltoutput&gt      -<em>???????????</em>
+    &ltoption&gt      -<em>select ifadesi ile oluşturulan sorgu veya istekler için seçenekler eklemede kullanılır.</em>
+    &ltoptgroup&gt    -<em>select ile oluşturulan seçeneklerin guruplanmasında kullanılır.</em>
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>input alanlar için <em>name</em> attribute'unun önemi </h2>
+
+<nav>
+  Her input alanının gönderilecek bir name attribute a sahip olması gerektiğine dikkat edin.
+Name attribute atlanırsa, giriş alanının değeri hiç gönderilmeyecektir.
+</nav>
 
 <div class="">
   label etiketi ekran okuyucu kullanan kişiler için önemlidir çünkü kullanıcı öğeye odaklandığında ekran okuyucu öğe ile ilişkili olan label i okur.
