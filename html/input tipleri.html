@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>input types</title>
+    <link rel="stylesheet" href="input.css">
+  </head>
+  <body>
+    <h1>input type attribute values</h1>
+    <hr>
+<pre>
+
+            &ltinput type="button"&gt
+            &ltinput type="checkbox"&gt
+            &ltinput type="color"&gt
+            &ltinput type="date"&gt
+            &ltinput type="datetime-local"&gt
+            &ltinput type="email"&gt
+            &ltinput type="file"&gt
+            &ltinput type="hidden"&gt
+            &ltinput type="image"&gt
+            &ltinput type="month"&gt
+            &ltinput type="number"&gt
+            &ltinput type="password"&gt
+            &ltinput type="radio"&gt
+            &ltinput type="range"&gt
+            &ltinput type="reset"&gt
+            &ltinput type="search"&gt
+            &ltinput type="submit"&gt
+            &ltinput type="tel"&gt
+            &ltinput type="text"&gt
+            &ltinput type="time"&gt&gt
+            &ltinput type="url"&gt&gt
+            &ltinput type="week"&gt
+
+</pre>
+
+<hr>
+<form class="" action="index.html" method="post">
+  <input type="text" name="text" value="text"alt="standart girişler için"><br>
+  <input type="password" name="password" value="password" alt="password girişleri için"><br>
+  <input type="submit" name="submit" value="submit"><br>
+  <input type="reset" name="reset" value="reset"><br>
+  <input type="radio" name="radio" value="radio"> <em>left or right</em>
+  <input type="radio" name="radio" value="radio"><br>
+  <input type="checkbox" name="checkbox" value="checkbox"> left and right / anyone /neither
+  <input type="checkbox" name="checkbox" value="checkbox"> <br>
+  <input type="button" name="button" value="type='button'"><br>
+  <input type="color" name="color" value=""><br>
+  <input type="date" name="date" value=""><br>
+  <input type="email" name="email" value="type='email'value='type='email'value='''"><br>
+  <input type="file" name="file" value=""> <br>
+  <input type="number" name="number" value="number" min="0" max="5"  ><br>
+  <input type="range" name="range" value="range" min="0" max="100" step="10"autofocus> <br>
+  <input type="search" name="search" value="search on google"><br>
+  <input type="tel" name="tel" value="Telefon no:"><br>
+  <input type="time" name="time" value="time"><br>
+  <input type="url" name="url" value="url" >
+
+  <hr>
+  <hr>
+  <hr>
+<h2>İnput other attributes</h2>
+<dl>
+  <dt>value</dt>
+  <dd>bir input alanı için başlangıç değeri belirtir.</dd>
+  <dt>readonly</dt>
+  <dd>input alanlarını salt okunur olarak işaretler.herhangi bir değer almaz. </dd>
+  <dt>disabled</dt>
+  <dd>input alanlarını pasifleştirmek için kullanılır readonly gibi değer almaz. </dd>
+  <dt>size</dt>
+  <dd>input alanlarının karakter genişliğini ayarlamaya yarar. Default değer 20 dir  Metin,arama,tel,url,mail ve şiframe alanlarında kullanılabilir..</dd>
+  <dt>min ve max</dt>
+  <dd>Min ve maks öznitelikleri şu girdi türleriyle çalışır: sayı, aralık, tarih, tarih saat-yerel, ay, saat ve hafta.</dd>
+  <dt>multiple</dt>
+  <dd>input(sadece eposta ve dosya) alanlarına birden fazla ekleme yapmak için kullanılır.</dd>
+  <dt>patter</dt>
+  <dd>regex ifadeleri belirtmek için kullanılır.</dd>
+  <dt>placeholder</dt>
+  <dd>input alanlarına kullanıcın örnek kullanımı göstermek için kullanılır. placeholder şu input türleriyle çalışır: metin, arama, url, tel, e-posta ve şifre.</dd>
+  <dt>required</dt>
+  <dd>form gönderilmeden önce required işaretli inputların doldurulmasını zorunlu kılar.text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file</dd>
+  <dt>autofocus</dt>
+  <dd>websayfası yüklendiğinde doldurulması gereken bir inputa fare ile otomatik tıklar.</dd>
+  <dt>height ve widht </dt>
+  <dd>inputların yükseklik ve genişlik özellikleri, bir &ltinput type = "image"&gt öğesinin yüksekliğini ve genişliğini belirtir.</dd>
+  <dt>autocomplete</dt>
+  <dd>browser cache inden alanlara öneri yapmasını kapatmak ve açmak için kullanılır.'on'/'off', varsayılan olarak on seçilidir.</dd>
+  <dt></dt>
+  <dd></dd>
+  <dt></dt>
+  <dd></dd>
+</dl>
+
+<hr>
+<hr>
+<hr>
+
+
+ <h2>input form* attributes</h2>
+
+
+
+<dl>
+  <dt>form</dt>
+  <dd>&ltinput&gt elementinin <i>form</i> attribute u &ltinput&gtun hangi form grubuna ait oldulğunu gösterir. Bu attribute sayesinde &ltform&gt etiketleri dışında da inputlar tanımlanabilir fakat form attribute u &ltform&gt etiketinin id değeri ile aynı olmalıdır.</dd>
+  <dt>formaction</dt>
+  <dd>İnput formaction özniteliği, form gönderildiğinde girişi işleyecek dosyanın URL'sini belirtir.
+Not: Bu öznitelik, &ltform&gt öğesinin action özniteliğini geçersiz kılar.
+Formaction özelliği şu giriş türleriyle çalışır: submit ve image.</dd>
+  <dt>formenctype</dt>
+  <dd>İnput formenctype özniteliği, form verilerinin gönderildiğinde nasıl kodlanması gerektiğini belirtir (yalnızca method = "post" içeren formlar için).
+Not: Bu öznitelik, &ltform&gt öğesinin enctype özniteliğini geçersiz kılar.
+Formenctype özniteliği şu giriş türleriyle çalışır: gönderme ve resim.</dd>
+  <dt>formatmethod</dt>
+  <dd>form alanları get ve post olarak gönderilirken bir submit butonu formmethod ile özelleştirilip gönderilebilir. input etiketindeki formatmethod form etiketinin method attribute una baskındır.</dd>
+  <dt>formattarget</dt>
+  <dd>form etiketinin target attribute u ile aynı işi yapar. Fakat aynı form içerisinde input attribute u olan formattarget, form attribute u olan targeta baskındır.</dd>
+  <dt>formvalidate</dt>
+  <dd>email gibi girilmesi zorunlu alanların doğrulama yapılmadan gönderilmesini sağlar. form etiketinindeğer almayan <i>novalidate</i>  attributuna baskındır.</dd>
+
+</dl>
+
+
+
+
+
+
+
+
+</form>
+
+  </body>
+</html>
