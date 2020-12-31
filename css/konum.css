@@ -1,0 +1,19 @@
+div{
+  border-style: dashed;
+  border-color:red;
+}
+#buyuk{
+  width: 200px;
+  height: 100px;
+  background-color: khaki;
+ overflow: scroll;
+
+}
+
+#kucuk{
+  width: 100px;
+  height: 50px;
+  background-color: lawngreen;
+  position:relative;
+
+}
