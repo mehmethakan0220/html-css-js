@@ -1,0 +1,47 @@
+
+#sayfa{
+  border-style: solid;
+  border-color:red;
+  border-width: 1px;
+  width: 400px;
+  min-height: 400px;
+  margin: auto;
+
+}
+header{
+  border-style:dotted;
+  border-color:blue;
+  width: 360px;
+  height: 50px;
+  margin:auto;
+  background-color: chocolate;
+}
+nav{
+  border-style:solid;
+  border-color:blue;
+  width: 360px;
+  height: 30px;
+  margin:auto;
+  background-color: seagreen;
+
+}
+article{
+  border-style:solid;
+  border-color:green;
+  width: 300px;
+  min-height: 200px;
+  margin:auto;
+  background-color: lightgrey;
+  float:left;
+  position: relative;
+  left: 20px;
+}
+aside{
+  border-style: ridge;
+  width: 60px;
+  min-height: 200px;
+  float: right;
+  position: relative;
+  right: 10px;
+  background-color:grey;
+}

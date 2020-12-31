@@ -1,19 +1,38 @@
 div{
-  border-style: dashed;
-  border-color:red;
+  border-style: solid;
+  border-color:green;
+  border-width: 0px;
+   border-radius: 1px;
+  box-shadow: 10px 10px 10px yellowgreen ;
+  float: left;
 }
 #buyuk{
   width: 200px;
-  height: 100px;
+  height: 200px;
   background-color: khaki;
- overflow: scroll;
+ overflow: auto;
+
+
+
+
+
+
+
 
 }
 
 #kucuk{
-  width: 100px;
-  height: 50px;
+  width: 300px;
+  height: 100px;
   background-color: lawngreen;
-  position:relative;
+
+
+}
+
+#genis{
+  width: 400px;
+  height: 100px;
+  background-color: lawngreen;
+
 
 }
