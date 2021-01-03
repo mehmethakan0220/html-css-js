@@ -1,0 +1,165 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#sayfa{
+  width: 900px;
+  min-height: 614px;
+  margin:auto; /*tarayıcıyı ortalar*/
+
+}
+/*banner kısmı*/
+#banner{
+  width: 896px;
+  border-style: solid;
+  border-width: 1px;/*sınır çizgilerinin kalınlığı*/
+  height: 100px;
+  margin:auto; /*tarayıcıyı ortalar*/
+  background-color: yellow;
+
+}
+
+#logo{
+  width: 100px;
+  height: 80px;
+  background-color: white;
+  position:relative;
+  top:10px;
+  left:10px;
+  border-radius: 100px;
+
+  float: left;
+}
+
+#sosyal{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  float: right;
+  position: relative;
+  right: 10px;
+  top: 25px;
+
+
+}
+
+#ikon{
+
+}
+
+#anamenu{
+
+  width: 896px;
+  border-style: solid;
+  border-width: 1px;/*sınır çizgilerinin kalınlığı*/
+  height: 50px;
+  margin:auto; /*tarayıcıyı ortalar*/
+  background-color: green;
+
+}
+
+#anamenu #bar{
+  border-style:dotted;
+  border-width: 1px;
+  height: 48px;
+  width: 222px;
+  float: left;
+  background-color: lightgrey;
+  margin:0px;
+  text-align: center;
+  text-decoration-style: double;
+
+
+}
+
+
+
+
+
+/*içerik*/
+
+#icerik{
+  width: 700px;
+  border-style: solid;
+  border-width: 0px;/*sınır çizgilerinin kalınlığı*/
+
+  float: right;
+  min-height: 400px;
+  background-color: lightgrey;
+}
+
+#yanmenu{
+
+  width: 200px;
+  border-style: solid;
+  border-width: 0px;/*sınır çizgilerinin kalınlığı*/
+  min-height: 400px;
+  float: left;
+  background-color: blue;
+
+}
+
+#altmenu{
+  width: 898px;
+  border-style: solid;
+  border-width: 1px;/*sınır çizgilerinin kalınlığı*/
+  min-height: 50px;
+  margin:auto; /*tarayıcıyı ortalar*/
+  background-color: red;
+  float: left;
+}
+
+#altmenu #bar{
+
+  width: 150px;
+  height: 50px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+div a:link{
+  color: blue;
+}
+div a:visited{
+  color:red;
+  font-family: fantasy;
+}
+div a:hover{
+  color:darkblue;
+  text-decoration:underline;
+}
+div a:active{
+  color:red;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+aside dl dt{
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+  margin:10px;
+}
+aside dl dd{
+  padding:20px;
+  margin:10px;
+}
+
+article p{
+  font-size: 18px;
+  font-family:sans-serif ;
+  margin:20px;
+  padding:15px;
+  text-indent: 20px;
+}

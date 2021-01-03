@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>lorem1</h1>
+  <p>Js te kullnıcıdan veri almak için prompt fonksiyonu kullanılır.<br>
+    aşağıdaki butona entegre edilmiştir. </p>
+  <button onclick="prompt('Değer giriniz.')">bas!</button>
+
+  <p>js te string bir değeri sayısal olarak kullanmak gerekirse <i>Number(sayi)</i> ile tanımlarız. </p>
+
+  <pre>
+     <code>
+       var x=10;
+       var y="10";
+       console.log(x=="y"); -------> True ('==' ifadesi değer bazında karşılaştırma yapar)
+       console.log(x==="y");-------> False ('===' ifadesi ise ilk olarak tip karşılaştırması yapar. Tipler uyuştuktan sonra değer karşılaştırır.)
+
+ </code>
+
+    <h2>break ile continue arasındaki fark</h2>
+
+    <i>break</i> döngüyü kırar ve döngü biter
+    <i>continue</i> döngü içerisinde genelde bir şarta bağlanır ve sadece o şart için kendisinden sonraki satırlar çalıştırılmaz  ama döngü devam eder.
+
+    <b>örneğin</b>
+    <code>
+      for (var i = 0; i < 100; i++) {
+         if (i==50) {
+           continue;
+         }
+         console.log(i);
+      }
+
+      sadece i=50 değeri için continue çalışır ve kendisinden sonraki kodları sadece bir defalığına işletmez.
+
+    </code>
+
+    <h2>Dizi syntax</h2>
+    <p>Dizileri tanımlamak için iki farklı yol kullanırız. Dizinin elemanlarına ulaşmak için [] kullanılır.
+    <br> örneğin: ulke[1] </p>
+    <code>
+      var ulke = ["Turkey","France","England","Eygpt"]
+      var sehir = new Array("Istanbul","Ardahan","Balıkesir","Tunceli")
+    </code>
+
+     <h3>Dizilerde ekleme çıkarma işlemleri </h3>
+
+      <code>
+        ulke.push("Usa");          -->dizinin sonuna bir eleman ekler
+        ulke.unshift('Türkiye');   -->dizinin başına bir elemean ekler(index numaralarını kaydırırarak ekler)
+        ulke.pop();                -->dizinin son indexindeki elemanı çıkartır.
+        ulke.shift();              -->dizinin ilk indexindeki elemanı çıkartır(index numaralarını kaydırır).
+      </code>
+
+      <h3>forEach ile dizi elemanlarına erişme</h3>
+      temel yapı
+      <code>
+        sehir.foreach((item,i)=>{ ---Yapılacakişlemler--- });
+      </code>
+      örnek
+      <code>
+        sehir.forEach((item, i) => {
+          console.log(item+" "+i)
+        });
+
+        veya
+
+        sehir.forEach(function(element) { ----------------> burada kullanılan fonksiyon tipi anonymous function.
+          console.log(element);
+        });
+      </code>
+
+      <h3>Dizileri nesne olarak  oluşturma ve elemanlara erişme </h3>
+
+      <code>
+        var arac={
+          marka:'opel',
+          model:"astra",
+          yil:"2021",
+          renk:"beyaz",
+          vites:"otomatik"
+        };
+        console.log(arac.marka);
+        console.log(arac.model);
+        console.log(arac.yil);
+
+
+        <output>
+          opel
+          astra
+          2021
+        </output>
+        <b>NOt:burada elemanlara index olarakta erişilebiliriz.</b>
+        console.log(arac['renk']);
+        <em style="text-decoration:line-through;" >console.log(arac[4]);</em>
+        <output>
+          beyaz
+          undefined   ---> böyle bir index olmadığı için undefined cevap döndü
+        </output>
+      </code>
+      <h4>js te obje oluşturmanın bir diğer türü</h4>
+
+      <code>
+        var meslek = new Object();
+        meslek.name= "marangoz";
+        meslek.salary="win-win";
+        meslek.type ="crafting";
+        meslek.workarea="consturction";
+      </code>
+      <h4>çok boyulu obje dizileri oluşturma</h4>
+      <code>
+        var arabalar = [
+          {
+            marka:"opel",
+            model:"astra",
+            vites:"auto",
+          },
+          {
+            marka:"volvo",
+            model:"s40",
+            vites:"manuel",
+          }
+        ];
+        console.log(arabalar[1].marka);
+        console.log(arabalar[0].marka);
+      </code>
+      <output >
+        volvo
+        opel
+      </output>
+
+      <h2>Fonksiyonlar</h2>
+       <h4>prototip</h4>
+
+       <code>
+         function functionName(parameter1,parameter2) {
+
+
+         return parameter1+parameter2;
+         }
+       </code>
+
+   </pre>
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="script.js"> </script>
+</body>
+
+</html>

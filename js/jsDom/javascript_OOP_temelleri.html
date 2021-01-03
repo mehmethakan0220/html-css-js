@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>Nesne tabanlı programlama</h1>
+
+<h2>Nesne Tanımlama</h2>
+<pre>
+  var nesne = {
+    isim:"ali",
+    yas:19,
+    boy:176,
+    kilo:77
+
+  }
+
+  var nesne = new Object();
+
+  nesne.isim = "mustafa";
+  nesne.yas = 30;
+  nesne.boy = 180;
+  nesne.tip = "nesne";
+  nesne.ozellikSayisi = "4+1";
+</pre>
+<h2>Fonksiyon şeklinde nesne tanımlama</h2>
+<h3>Tanımlama 1</h3>
+<pre>
+  function ornek() {
+    this.isim = "mehmet";
+    this.soyisim = "hakan";
+  }
+
+  var nesne = new ornek();
+
+  var a = nesne.isim;
+  var b = nesne.soyisim;
+  document.write(a,b);
+</pre>
+
+<h3>Tanımlama 2</h3>
+
+<pre>
+  var ornek = function(){
+    this.isim = "mehmet";
+    this.soyisim = "hakan";
+  }
+
+  var nesne = new ornek();
+
+  document.write(nesne.isim);
+  document.write(nesne.soyisim);
+</pre>
+<h2>Bir nesneyi bir değişkene atama</h2>
+
+<pre>
+  var nesne = {renk:"kırmızı",kilo:3,boy:"15cm"};
+
+  var degisken = nesne;
+
+  document.write(degisken.renk);
+  document.write(degisken.kilo);
+  document.write(degisken.boy);
+
+  <b>işlem sonucunda değişken bir nesneye dönüşür</b>
+</pre>
+<h2>Boş nesne tanımlama ve daha sonradan değer atama</h2>
+<h3>[] ile boş nesne oluşturma</h3>
+<pre>
+  var nesne = [];
+  nesne.renk = "sarı";
+  nesne.ad = "Muz";
+
+  document.write(nesne.renk,nesne.ad);
+</pre>
+<h3>new Object() ile boş nesne oluşturma</h3>
+<pre>
+  var nesne = new Object();
+
+  nesne.ad = "biber";
+  nesne.renk="yeşil";
+
+  document.write(nesne.ad,nesne.renk);
+</pre>
+<h2>Nesne elemanlarına dizi mantığı ile erişmek</h2>
+<pre>
+  var nesne = {isim:"biber",renk:"kırmızı"};
+
+  var a = nesne['isim'];
+  var b = nesne['renk'];
+
+  document.write(a,b);
+
+
+  var nesne = new Object();
+
+  nesne.isim ="biber";
+  nesne.renk = "yesil";
+
+  var a = nesne['isim'];
+  var b = nesne['renk'];
+
+  document.write(a,b);
+</pre>
+
+<h2>Nesne içinde fonksiyon oluşturma ve çağırma</h2>
+
+<pre>
+  var nesne = {
+    isim:"portakal",
+    renk:"turuncu",
+    yazdir:function(){
+      document.write(this.isim);
+      document.write(this.renk);
+    }
+  };
+
+  nesne.yazdir();
+  <s>nesne.yazdir;</s> // fonksiyon çağırdığımız için parantez kullanmalıyız.
+</pre>
+
+<h2>Nesne içerisinde fonksiyon, fonksiyon içerisinde de özellik tanımlama</h2>
+<pre>
+  var nesne = {
+
+  isim:"elma",
+  renk:"kırmızı",
+  ekstra:function(){
+    this.kilogramFiyat = 5;
+    this.kilo = 2;
+  }
+  };
+  //nesnenin ismine erişmekiçin
+  document.write(nesne.isim);
+
+  //nesnenin rengine erişmek için
+  document.write(nesne.renk);
+
+
+<output>
+  <em>  nesnenin ekstra fonksiyonun içindeki değerlere erişmeyi deneyelim
+    document.write(nesne.kilo);  Undefined hatası verecektir.
+
+    nesnenin ekstra özelliklerine erişmek için
+    ekstra fonksiyonunun tetiklenmesi lazım</em>
+</output>
+
+  nesne.ekstra();
+
+ <output > <em>  fonksiyon çalıştırıldıktan sonra özelliklere erişebiliriz.
+</em> </output>
+  var a = nesne.kilo;
+  var b = nesne.kilogramFiyat;
+  document.write(a,b);
+</pre>
+
+<h2>Nesnelerde parametreli fonksiyon ve return ifadesi kullanımları</h2>
+
+<pre>
+  var personel = {
+    bilgi: function(isim, yas, meslek) {
+      var metin = "merhaba " + isim + " " + yas + " yasindasin mesleğin=" + meslek;
+      return metin;
+    }
+  };
+
+  var a = personel.bilgi("mehmet", 20, "Yazılım");
+  document.write(a);
+  var b = personel.bilgi("hakan", 24, "tamirci");
+  document.write(b);
+</pre>
+
+<h2>Nesne fonksiyonlarına varsayılan parametre değeri atamak</h2>
+<pre>
+  var personel = new Object(
+    {
+      bilgi:function(isim="Mehmet",yas=24,meslek="yazılım"){
+        var metin = "Merhaba "+isim+" Daha "+yas+" yaşındasın" + " Mesleğin "+meslek+"<br/>";
+        return metin;
+      }
+    }
+  );
+
+  var sonuc1 = personel.bilgi();
+  var sonuc2 = personel.bilgi("hakan",20,"Adli bilişim mühendisliği");
+
+  document.write(sonuc1,sonuc2);
+
+</pre>
+
+<h2>İç içe nesne oluşturma ve elemanlarına erişme</h2>
+
+<pre>
+  var adres = new Object(
+    {
+      ulke:"Tr",
+      bolgeDetay:{
+        bolge:"Ege",
+        sehirDetay:{
+          sehir:"İzmir",
+          ilceDetay:{
+            ilce:"merkez"
+          }
+        }
+      }
+    }
+  );
+
+  document.write(adres.ulke);
+  document.write(adres.bolgeDetay.bolge);
+  document.write(adres.bolgeDetay.sehirDetay.sehir);
+  document.write(adres.bolgeDetay.sehirDetay.ilceDetay.ilce);
+</pre>
+
+<h2>delete ile nesne içerisinden özellik=değer çiftlerini silme</h2>
+<pre>
+  var meyve = new Object({
+    ad:"portakal",
+    renk:"turuncu",
+    kabuk:true,
+    cekirdek:true
+  });
+
+  for (var eleman in meyve) {
+       document.write(eleman,"=",meyve[eleman]);
+
+  }
+
+  delete meyve.renk;
+
+  document.write("**********************");
+
+  for (var eleman in meyve) {
+       document.write(eleman,"=",meyve[eleman]);
+
+  }
+  <output>
+          ad=portakal
+          renk=turuncu
+          kabuk=true
+          cekirdek=true
+          **********************
+          ad=portakal
+          kabuk=true
+          cekirdek=true
+  </output>
+</pre>
+<h2>Nesnelerde prototip tanımlama ve kullanma </h2>
+ <pre>
+   function sayilar(birincisayi,ikincisayi,ucuncusayi,dorduncusayi){
+     this.sayi1=birincisayi;
+     this.sayi2=ikincisayi;
+     this.sayi3=ucuncusayi;
+     this.sayi4=dorduncusayi;
+   }
+
+   sayilar.prototype.topla = function () {
+     return (this.sayi1 + this.sayi2 + this.sayi3 + this.sayi4 );
+   }
+
+   sayilar.prototype.cikar = function () {
+     return (this.sayi1-this.sayi2-this.sayi3-this.sayi4);
+   }
+
+   sayilar.prototype.carp = function () {
+     return (this.sayi1*this.sayi2*this.sayi3*this.sayi4);
+   }
+
+   var islem = new sayilar(1,2,3,4);
+
+   toplam = islem.topla();
+   fark = islem.cikar();
+   carpim = islem.carp();
+
+   document.write(toplam);
+   document.write(fark);
+   document.write(carpim);
+ </pre>
+
+
+
+
+
+
+
+  </body>
+</html>

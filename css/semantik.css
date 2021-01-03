@@ -4,7 +4,7 @@
   border-color:red;
   border-width: 5px;
   width: 400px;
-  min-height: 400px;
+  min-height: 600px;
   margin: auto;
 
 }
@@ -33,17 +33,17 @@ article{
   min-height: 200px;
   margin:auto;
   background-color: lightgrey;
-  float:left;
   position: relative;
-  left: 20px;
+  float: right;
+  right: 20px;
 }
 aside{
 
   width: 60px;
   min-height: 200px;
-  float: right;
   position: relative;
-  right: 20px;
+  float:left;
+  left: 20px;
   background-color:grey;
 }
 footer{
@@ -54,5 +54,11 @@ footer{
   left: 20px;
 
   float: left;
+
+}
+p{
+  text-indent: 20px;
+  text-align: left;
+  line-height: 20px;
 
 }
