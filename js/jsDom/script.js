@@ -1,8 +1,7 @@
 
 function changeById() {
 var temp = document.getElementById('button1').innerHTML="Hakan";
-document.getElementById('petiket').innerHTML = temp;
-alert(typeof temp);
+
 alert(document.getElementById('button1').tagName);
 }
 
@@ -38,4 +37,12 @@ function playbuton(){
 
   }
 
+}
+
+function belge() {
+  var gelenler = document.doctype.name;
+  var gidecekler = document.getElementById('belgeadi');
+  gidecekler.innerHTML=gidecekler.innerHTML+" :"+gelenler;
+  // console.log(gelenler);
+  // console.log(gidecekler);
 }
