@@ -273,6 +273,10 @@ console.log(elis1);
 
 
 
+//son olarak classların özel bir fonksiyon olduğunun kanıtınıda yapalım.
+
+console.log(typeof Kisi1);//function
+
 
 
 
